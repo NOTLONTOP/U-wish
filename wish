@@ -1,5 +1,4 @@
-
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("NOTLONTOP BETA", "Synapse")
 local Tab = Window:NewTab("player")
 local Section = Tab:NewSection("main player")
@@ -100,11 +99,14 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 end)
+
+
 local Tab = Window:NewTab("Best Hubs")
 local Section = Tab:NewSection("Hubs")
 Section:NewButton("DomainHub", "Hub", function()
     print("Clicked") loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexsoftworks/Domain/main/source'),true))()
 end)
+
 Section:NewButton("EzHub", "Hub With 150 Games+", function()
     print("Clicked") loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 end)
@@ -117,9 +119,12 @@ end)
 Section:NewButton("BruhHub","Trolling for Ragdoll Engine" , function()
     print("Clicked") loadstring(game:HttpGet("https://bruh.keshhub.com/.lua"))()
 end)
+Section:NewButton("SnowHub", "Hub (trolling)", function()
+    print("Clicked") loadstring(game:HttpGet("https://snowhub.dev/script.lua", true))()
+end)
 local Tab = Window:NewTab("READ ME")
 local Section = Tab:NewSection("CREDITS iateforever on rbx")
-Section:NewButton("V0.5", "VERSION 0.5", function()
+Section:NewButton("V0.6", "VERSION 0.6", function()
     print("Clicked")
 end)
 Section:NewButton("UPDATING WEEKLY", "updating", function()
@@ -132,3 +137,5 @@ end)
 
 
 
+
+  
